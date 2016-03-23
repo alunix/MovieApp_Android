@@ -1,0 +1,48 @@
+<resources>
+    <string-array name="fontValues">
+        <item>Sans-serif-thin</item>
+        <item>Sans-serif</item>
+        <item>Monospace</item>
+    </string-array>
+
+    <string-array name="feedValues">
+        <item>4</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="textColorTypeValues">
+        <item>White</item>
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Black</item>
+    </string-array>
+
+    <string-array name="textSizeTypeValues">
+        <item>Large</item>
+        <item>Larger</item>
+        <item>Jumbo</item>
+    </string-array>
+
+    <string-array name="backColorValues">
+        <item>Orange</item>
+        <item>Blue</item>
+        <item>Gray</item>
+        <item>Green</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+
+    <string-array name="movie_type">
+        <item>Most Popular</item>
+        <item>Genre</item>
+        <item>In Theatres</item>
+    </string-array>
+
+    <string-array name="tabs">
+        <item>Tab1</item>
+        <item>Tab2</item>
+        <item>Tab3</item>
+    </string-array>
+
+</resources>

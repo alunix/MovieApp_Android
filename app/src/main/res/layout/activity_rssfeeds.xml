@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout"
+    tools:context="com.mycompany.tuts.RSSFeeds">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_shadow"
+        android:elevation="12dp"
+        android:clipToPadding="false"/>
+
+
+    <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:popupTheme="@style/MyCustomToolbarTheme"
+        android:background="?android:attr/colorPrimary"/>
+
+    <include android:id="@id/app_bar" layout="@layout/app_bar"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.mycompany.tuts.RSSFeeds"
+        android:id="@+id/main_layout"
+        android:weightSum="1">
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/noResultsFound"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="No results found"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_margin="15dp" />-->
+
+    <ListView
+        android:id="@+id/list_rss"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.48"
+        android:layout_marginTop="70dp"
+        android:elevation="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+    </ListView>
+
+        <TextView
+            android:id="@+id/noResultsFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/no_results"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            android:layout_marginTop="200dp" />
+
+    </LinearLayout>
+
+
+    <com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout
+        android:id="@+id/fabtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:showDuration="600"
+        app:hideDuration="200"
+        app:rightMargin="10dp"
+        app:bottomMargin="5dp"
+        app:fadeInFraction="0.2" >
+
+        <com.github.fafaldo.fabtoolbar.widget.FABContainer
+            android:id="@+id/fabtoolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabtoolbar_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:src="@drawable/abc_ic_menu_share_mtrl_alpha"/>
+
+        </com.github.fafaldo.fabtoolbar.widget.FABContainer>
+
+        <LinearLayout
+            android:id="@+id/fabtoolbar_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fab_film"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_theaters_black_24dp"
+                android:contentDescription="@string/movie_pic" />
+            <ImageView
+                android:id="@+id/fab_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/ic_robot"
+                android:contentDescription="@string/robotPic" />
+
+            <ImageView
+                android:id="@+id/fab_rss"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_rss_96"
+                android:contentDescription="@string/rssPic" />
+
+        </LinearLayout>
+
+    </com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout>
+    </RelativeLayout>

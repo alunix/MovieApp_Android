@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#009688</color>
+    <color name ="primaryColorDark">#00796B</color>
+    <color name ="accentColor">#0D47A1</color>
+    <color name ="secondaryColor">#333333</color>
+    <color name="color_alizarin">#e74c3c</color>
+    <color name = "black">#000000</color>
+    <color name = "light_gray">#ccc</color>
+    <color name = "white">#fff</color>
+    <color name = "red">#800000</color>
+    <color name = "dark_gray">#4d4d4d</color>
+    <color name = "darker_gray">#333333</color>
+    <color name ="darkPurple">#2E0854</color>
+
+</resources>

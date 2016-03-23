@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Not really sure why this is here - inheritance?-->
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-bold</item>
+    </style>
+
+    <style name="MyCustomToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/accentColor</item>
+        <item name="android:textColor">@color/primaryColorDark</item>
+    </style>
+
+    <style name="settingsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/red</item>
+        <item name="background">@color/red</item>
+    </style>
+
+</resources>

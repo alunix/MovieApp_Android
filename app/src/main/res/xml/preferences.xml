@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"  >
+
+    <ListPreference
+
+        android:title="Font Type"
+        android:summary="Please select a font"
+        android:key="fontType"
+        android:defaultValue="normal"
+        android:entries="@array/fontValues"
+        android:entryValues="@array/fontValues" />
+
+    <ListPreference
+        android:title="Color Details"
+        android:summary="Select the color for the main background"
+        android:key="colorType"
+        android:defaultValue="#FFFFFF"
+        android:entries="@array/backColorValues"
+        android:entryValues="@array/backColorValues" />
+
+    <ListPreference
+        android:title="Color Details"
+        android:summary="Select the color for the list background"
+        android:key="backColorType"
+        android:defaultValue="#00796B"
+        android:entries="@array/backColorValues"
+        android:entryValues="@array/backColorValues" />
+
+    <ListPreference
+        android:title="Text Size"
+        android:summary="Select a Text size"
+        android:key="textSizeType"
+        android:defaultValue="13"
+        android:entries="@array/textSizeTypeValues"
+        android:entryValues="@array/textSizeTypeValues" />
+
+    <ListPreference
+        android:title="Text Color"
+        android:summary="Select text color"
+        android:key="textColorType"
+        android:defaultValue="#000000"
+        android:entries="@array/textColorTypeValues"
+        android:entryValues="@array/textColorTypeValues" />
+
+</PreferenceScreen>

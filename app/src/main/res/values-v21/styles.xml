@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:font="http://schemas.android.com/res/net.kianoni.fontloader">
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!--<item name="android:colorPrimary">@color/primaryColor</item>-->
+        <!--<item name="android:statusBarColor">#00796B</item>-->
+        <!--&lt;!&ndash;<item name="android:windowNoTitle">true</item>&ndash;&gt;-->
+        <!--<item name="android:colorAccent">@color/accentColor</item>-->
+        <!--<item name="android:fontFamily">sans-serif</item>-->
+        <!--<item name="android:textViewStyle">@style/RobotoTextViewStyle</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+        <!--<item name="android:displayOptions">showHome|useLogo|showTitle</item>-->
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <item name="android:windowEnterTransition">@android:transition/slide_bottom</item>
+        <item name="android:windowExitTransition">@android:transition/slide_bottom</item>
+
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+        <!-- enable overlap of transitions -->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">true</item>-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">true</item>-->
+    </style>
+    <dimen name="topMargin">55dp</dimen>
+    <style name="PopupMenuStyle" parent="Theme.AppCompat.Light">
+        <!--<item name="android:background">@color/primaryColor</item>-->
+    </style>
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">serif</item>
+
+        <!--<item name="font">aspergit</item>-->
+        <!--<item name="fontFilePattern">fonts/{Acme-Regular}-{Acme-Regular}.ttf</item>-->
+        <!--<item name="fontFamily">OpenSans</item>-->
+        <!--<item name="fontVariant">Regular</item>-->
+
+    </style>
+
+    <style name="settingsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/red</item>
+        <item name="background">@color/red</item>
+    </style>
+
+    <style name="MyCustomToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/accentColor</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">36dp</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:elevation">22dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="theme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/accentColor</item>
+        <item name="android:textColor">@color/primaryColorDark</item>
+    </style>
+
+    <style name="nav_drawer" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:actionMenuTextColor">@color/primaryColorDark</item>
+        <item name= "android:color">@color/primaryColor</item>
+        <item name ="android:state_checked">true</item>
+
+    </style>
+
+
+</resources>

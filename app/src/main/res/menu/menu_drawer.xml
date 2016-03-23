@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme= "@style/nav_drawer"
+    xmlns:Height="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group_1" android:checkableBehavior="single">
+    <item
+        android:id="@+id/navigation_item_1"
+        android:title="" >
+
+        <menu>
+            <item
+                android:id="@+id/navigation_item_2"
+                android:icon="@drawable/ic_looks_one_black_24dp"
+                android:title="@string/myMovies" />
+
+        </menu>
+
+    </item>
+</group>
+
+    <item
+        android:id="@+id/navigation_item_4"
+        android:title="" >
+
+        <menu>
+            <item
+                android:id="@+id/navigation_item_5"
+                android:icon="@drawable/ic_looks_two_black_24dp_big"
+                android:title="@string/item5" />
+
+            <item
+                android:id="@+id/navigation_item_6"
+                android:icon="@drawable/ic_looks_3_black_24dp_big"
+                android:title="@string/rssFeeds" />
+
+        </menu>
+
+    </item>
+
+</menu>
